@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { WelcomeComponent} from "./welcome/welcome.component";
+import {Component} from '@angular/core';
+import {RouterOutlet} from '@angular/router';
+import {WelcomeComponent} from "./welcome/welcome.component";
 
 @Component({
   selector: 'app-root',
+  template:'<app-welcome></app-welcome>',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
+  imports: [RouterOutlet, WelcomeComponent],
   styleUrl: './app.component.css'
 })
 export class AppComponent {
